@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,14 +7,19 @@
     <title>ROOTS.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>
-      <header class="border-1 border-red-500 flex flex-row justify-between items-center px-11">
+    <main class="font-[Georgia]">
+      <header
+        class="flex flex-row items-center justify-between border-1 border-red-500 px-11"
+      >
         <div id="logo" class="font-[Caveat] text-6xl">ROOTS.</div>
         <nav>
-          <ul class="flex flex-row justify-evenly items-center gap-4">
+          <ul class="flex flex-row items-center justify-evenly gap-4">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#offerings">Offerings</a></li>
@@ -23,14 +28,16 @@
           </ul>
         </nav>
       </header>
-      <section id="hero" class="border-1 border-blue-500 h-96"></section>
+      <section id="hero" class="h-96 border-1 border-blue-500"></section>
       <section id="about" class="border-1 border-pink-500">
         <div>
           <div>
-            <h3>About Us</h3>
+            <h2 class="font-[Caveat] text-5xl font-bold">About Us.</h2>
             <p>
-              At Roots Community Bakery, we believe great bread tells a story. Our story begins with local farmers, handcrafted techniques,
-              and a passion for bringing people together through the simple joy of baking.
+              At Roots Community Bakery, we believe great bread tells a story.
+              Our story begins with local farmers, handcrafted techniques, and a
+              passion for bringing people together through the simple joy of
+              baking.
             </p>
           </div>
           <div><img src="placeholder.png" alt="" /></div>
@@ -38,7 +45,7 @@
         <div>
           <div><img src="placeholder.png" alt="" /></div>
           <div>
-            <h3>Our Promise</h3>
+            <h2 class="font-[Caveat] text-5xl font-bold">Our Promise.</h2>
             <ul>
               <li>100% locally sourced ingredients</li>
               <li>Freshly baked artisan breads daily</li>
@@ -48,40 +55,64 @@
           </div>
         </div>
       </section>
-      <section id="offerings" class="border-1 border-green-500 max-w-5xl mx-auto flex flex-col gap-8">
-        <h2 class="text-5xl font-bold text-center font-[Caveat]">Our Offerings.</h2>
+      <section id="offerings" class="mx-auto flex max-w-5xl flex-col gap-8">
+        <h2 class="text-center font-[Caveat] text-5xl font-bold">
+          Our Offerings.
+        </h2>
         <article class="flex flex-row gap-4">
           <div>
-            <img class="w-48 max-w-none" src="placeholder.png" alt="placeholder" />
+            <img
+              class="w-96 max-w-none"
+              src="bread.jpg"
+              alt="Hands holding a loaf of bread."
+            />
           </div>
-          <div>
-            <h3>Artesian Breads</h3>
+          <div class="pt-4">
+            <h3 class="font-[Helvetica] text-2xl font-bold">Artesian Breads</h3>
             <p>
-              From crusty sourdough to hearty whole grain, each loaf is carefully crafted to bring out the richest flavors and textures. Our
-              breads are made from grains sourced within 50 miles of our bakery, supporting local agriculture and ensuring maximum
+              From crusty sourdough to hearty whole grain, each loaf is
+              carefully crafted to bring out the richest flavors and textures.
+              Our breads are made from grains sourced within 50 miles of our
+              bakery, supporting local agriculture and ensuring maximum
               freshness.
             </p>
           </div>
         </article>
         <article class="flex flex-row gap-4">
           <div>
-            <img class="w-48 max-w-none" src="placeholder.png" alt="placeholder" />
+            <img
+              class="w-96 max-w-none"
+              src="pastry.jpg"
+              alt="A plate of cinnamon rolls."
+            />
           </div>
-          <div>
-            <h3>Pastry Selection</h3>
+          <div class="pt-4">
+            <h3 class="font-[Helvetica] text-2xl font-bold">
+              Pastry Selection
+            </h3>
             <p>
-              Indulge in our rotating menu of sweet and savory pastries. Each week brings new surprises, from classic croissants to
-              innovative gluten-free tarts that don't compromise on taste.
+              Indulge in our rotating menu of sweet and savory pastries. Each
+              week brings new surprises, from classic croissants to innovative
+              gluten-free tarts that don't compromise on taste.
             </p>
           </div>
         </article>
         <article class="flex flex-row gap-4">
-          <div><img class="w-48 max-w-none" src="placeholder.png" alt="placeholder" /></div>
           <div>
-            <h3>Community Workshops</h3>
+            <img
+              class="w-96 max-w-none"
+              src="workshop.jpg"
+              alt="Two people preparing ingredients together."
+            />
+          </div>
+          <div class="pt-4">
+            <h3 class="font-[Helvetica] text-2xl font-bold">
+              Community Workshops
+            </h3>
             <p>
-              Learn, bake, and connect! Our monthly baking workshops are perfect for home cooks, baking enthusiasts, and anyone curious
-              about the magic of bread making. All skill levels welcome.
+              Learn, bake, and connect! Our monthly baking workshops are perfect
+              for home cooks, baking enthusiasts, and anyone curious about the
+              magic of bread making. All skill levels welcome.
             </p>
           </div>
         </article>
