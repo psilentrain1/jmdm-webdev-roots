@@ -1,24 +1,34 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import "./style.css";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+const header = document.querySelector("header");
+const logo = document.getElementById("logo");
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+window.addEventListener("scroll", () => {
+  if (scrollY === 0) {
+    header?.classList.remove("bg-neutral-950");
+    logo?.classList.add("opacity-0");
+  } else if (scrollY > 0) {
+    header?.classList.add("bg-neutral-950");
+    logo?.classList.remove("opacity-0");
+  }
+});
+
+const mobileMenuBtn = document.getElementById(
+  "mobileMenuBtn",
+) as HTMLButtonElement;
+const mobileMenuContent = document.getElementById(
+  "mobileMenuContent",
+) as HTMLDivElement;
+const menuLinksUL = document.getElementById("menuLinks") as HTMLUListElement;
+const menuLinks = menuLinksUL.children;
+
+mobileMenuBtn.addEventListener("click", () => {
+  mobileMenuContent.classList.toggle("hidden");
+});
+
+for (let i = 0; i < menuLinks.length; i++) {
+  const link = menuLinks[i] as HTMLAnchorElement;
+  link.addEventListener("click", () => {
+    mobileMenuContent.classList.toggle("hidden");
+  });
+}

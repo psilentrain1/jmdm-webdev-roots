@@ -1,7 +1,7 @@
 {
   "name": "jmdm-webdev-roots",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "typescript": "~5.7.2",
     "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.17",
+    "tailwindcss": "^4.0.17"
   }
 }
